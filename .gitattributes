@@ -1,0 +1,14 @@
+/.github            export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/CONTRIBUTING.md    export-ignore
+/examples           export-ignore
+/specs              export-ignore
+/tests              export-ignore
+/tools              export-ignore
+/phpcs.xml.dist     export-ignore
+/phpstan.neon.dist  export-ignore
+/phpunit.xml.dist   export-ignore
+
+/src/Service/*      linguist-generated
+/docs/reference.md  linguist-generated

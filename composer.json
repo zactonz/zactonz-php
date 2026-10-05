@@ -1,0 +1,75 @@
+{
+    "name": "zactonz/zactonz-php",
+    "description": "Official PHP client for the Zactonz REST APIs: QR codes, barcodes, screenshots and PDFs, social card images, image conversion, link previews, web page to Markdown, DNS, SSL, WHOIS, email checks and translation.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "zactonz",
+        "api",
+        "sdk",
+        "qr code",
+        "barcode",
+        "screenshot",
+        "html to pdf",
+        "og image",
+        "link preview",
+        "markdown",
+        "dns",
+        "ssl",
+        "whois",
+        "email verification",
+        "translation"
+    ],
+    "homepage": "https://developers.zactonz.com/",
+    "support": {
+        "docs": "https://developers.zactonz.com/apis/",
+        "issues": "https://github.com/zactonz/zactonz-php/issues",
+        "source": "https://github.com/zactonz/zactonz-php",
+        "email": "info@zactonz.com"
+    },
+    "authors": [
+        {
+            "name": "Zactonz Technologies",
+            "homepage": "https://zactonz.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.5 || ^11.5 || ^12.0",
+        "squizlabs/php_codesniffer": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zactonz\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zactonz\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "generate": "php tools/generate.php",
+        "test": "phpunit --testsuite unit",
+        "analyse": "phpstan analyse --no-progress",
+        "lint": "phpcs",
+        "check": [
+            "php tools/generate.php --check",
+            "@lint",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts-descriptions": {
+        "generate": "Regenerate src/Service and docs/reference.md from specs/",
+        "check": "Run every check CI runs"
+    }
+}
