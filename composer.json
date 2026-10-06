@@ -20,9 +20,9 @@
         "email verification",
         "translation"
     ],
-    "homepage": "https://developers.zactonz.com/",
+    "homepage": "https://developers.zactonz.com/tools/zactonz-php/",
     "support": {
-        "docs": "https://developers.zactonz.com/apis/",
+        "docs": "https://developers.zactonz.com/tools/zactonz-php/",
         "issues": "https://github.com/zactonz/zactonz-php/issues",
         "source": "https://github.com/zactonz/zactonz-php",
         "email": "info@zactonz.com"
